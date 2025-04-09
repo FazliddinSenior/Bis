@@ -10,7 +10,7 @@ setInterval(nextSlide, 3000);
 
 
 
-const apiUrl = 'https://api.telegram.org/bot7773067913:AAEfKppiuGpyOci8U-T2GCYH_fVrLc_snYU/sendMessage';
+const apiUrl = 'https://api.telegram.org/bot7588635784:AAHLuozg0_A7vflRInaZ1jGrQ9Ag59U-zbc/sendMessage';
 
 document.addEventListener("DOMContentLoaded", () => {
     const nameInput = document.getElementById('name');
@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Xabarni tayyorlash
         const params = {
-            chat_id: '7146565839', // Sizning chat ID
-            text: `📌 *Yangi ariza kelib tushdi!* \n\n👤 Ism:  *${nameInput.value}* \n📞 Telefon:  *${telInput.value}*`,
+            chat_id: '5868387236', // Sizning chat ID
+            text: `📌 *Yangi ariza kelib tushdi!* \n\n👤 Ism:  *${nameInput.value}* \n📞 Telefon:  *+${telInput.value}*`,
             parse_mode: 'Markdown'
         };
 
@@ -114,46 +114,3 @@ function changeLanguage(lang) {
 
 
 
-
-// const apiUrl = 'https://api.telegram.org/bot7773067913:AAEfKppiuGpyOci8U-T2GCYH_fVrLc_snYU/sendMessage';
-
-
-// const name = document.getElementById('name');
-// const tel = document.getElementById('tel');
-// const submit = document.getElementById('submit');
-
-
-// // Submit tugmasi bosilganda ishlash
-// submit.addEventListener('click', (event) => {
-//     event.preventDefault();
-
-//     // Foydalanuvchi ma'lumotlarini tayyorlash
-//     const params = {
-//         chat_id: '7146565839', // Bu sizning chat ID
-//         text: `Ism: ${name.value} \nTelefon: ${tel.value}`
-//     };
-
-//     // Telegram API orqali xabar yuborish
-//     fetch(apiUrl, {
-//         method: 'POST',
-//         headers: {
-//             'Content-Type': 'application/json',
-//         },
-//         body: JSON.stringify(params),
-//     })
-//         .then(response => response.json())
-//         .then(data => {
-//             console.log(data);
-//             if (data.ok) {
-//                 alert('Xabar muvaffaqiyatli yuborildi! Tez orada aynan siz bilan boğlanamiz😊');
-//             } else {
-//                 alert(`Xatolik: ${data.description}`);
-//             }
-//         })
-//         .catch(error => console.error('Xatolik:', error));
-
-//     // Inputlarni tozalash
-//     name.value = '';
-//     tel.value = '';
-
-// });
